@@ -1,10 +1,13 @@
 ### Date created
-July.26 2020
+oct.3 2021
 
 # Explore US Bikeshare Data
 
 ### Description
-In this project, you will make use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. You will write code to import the data and answer interesting questions about it by computing descriptive statistics. You will also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
+In this project, 
+   1- you will make use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington.
+   2- You will write code to import the data and answer interesting questions about it by computing descriptive statistics.
+   3- You will also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
 
 ### List of software, firmware and hardware you may require.
 * You should have Python 3, NumPy, and pandas installed using Anaconda
@@ -20,7 +23,7 @@ In this project, you will make use of Python to explore data related to bike sha
    * washington.csv
 
 ### Credits
-* [Pandas documentation is very usefull.](https://pandas.pydata.org/docs/)
-* [Numpy documentation.](https://numpy.org/doc/) (if needed)
 * [Python documentation for controlflow.](https://docs.python.org/3/tutorial/controlflow.html)
+* [Numpy documentation.](https://numpy.org/doc/) (if needed)
+* [Pandas documentation is very usefull.](https://pandas.pydata.org/docs/)
 * If I have doubts about the errors occured while running the code I used: www.stackoverflow.com
