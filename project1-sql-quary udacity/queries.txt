@@ -1,0 +1,119 @@
+--frist question (What is the order of the categories in terms of rental ?)
+
+WITH t1 AS(SELECT ca.name AS name_cat,
+                  count(r.rental_id) AS count_rental
+           FROM category ca
+           JOIN film_category fc
+           ON ca.category_id=fc.category_id
+           JOIN film f
+           ON f.film_id=fc.film_id
+           JOIN inventory
+           ON f.film_id=inventory.film_id
+           JOIN rental r
+           ON r.inventory_id=inventory.inventory_id
+           GROUP BY 1
+           ORDER BY 2 desc)
+SELECT t1.name_cat,
+       t1.count_rental
+FROM t1
+
+---------------------------------------------------------------------------------------------------
+--second question (What is ordering top 3 category in rental dvd in top 3 country?)
+
+--find top 3 countrywith count_rental_id
+WITH t1 AS (SELECT c.country AS country ,
+	           c.country_id AS country_id,
+		   COUNT(r.rental_id) AS rental_count
+            FROM country c
+            JOIN city ci
+            ON c.country_id=ci.country_id
+            JOIN address add
+            ON add.city_id=ci.city_id
+            JOIN customer cu
+            ON cu.address_id=add.address_id
+            JOIN rental r
+            ON cu.customer_id=r.customer_id
+            JOIN inventory inv
+            ON r.inventory_id=inv.inventory_id
+            JOIN film f
+            ON f.film_id=inv.film_id
+            JOIN film_category f_c
+            ON f_c.film_id=f.film_id
+            JOIN category ca
+            ON ca.category_id=f_c.category_id
+            GROUP BY 1,2
+            ORDER BY 3 desc
+            LIMIT 3),
+--in_each country find number_rental_id in_each category
+ t2 AS ( SELECT t1.country AS country
+		,c.name AS category_name,
+		count(r.rental_id)  AS count_id
+	FROM t1
+	JOIN city ci
+        ON t1.country_id=ci.country_id
+        JOIN address add
+        ON add.city_id=ci.city_id
+        JOIN customer cu
+        ON cu.address_id=add.address_id
+        JOIN rental r
+        ON cu.customer_id=r.customer_id
+        JOIN inventory inv
+        ON r.inventory_id=inv.inventory_id
+        JOIN film f
+        ON f.film_id=inv.film_id
+        JOIN film_category f_c
+        ON f_c.film_id=f.film_id
+        JOIN category c
+        ON c.category_id=f_c.category_id
+	WHERE c.name in ('Sports','Animation','Action')
+        GROUP BY 1,2
+        ORDER BY 3 desc )
+SELECT t2.country ,t2.category_name,t2.count_id
+FROM t2
+--------------------------------------------------------------------------------------------------------------------
+--three question (What is the most 10 actors have large payment)
+
+SELECT r.actor_name,
+       f.rating,
+       SUM(pa.amount)
+FROM film f
+JOIN inventory inv
+USING(film_id)
+JOIN rental re
+USING (inventory_id)
+JOIN payment pa
+ON re.rental_id=pa.rental_id
+JOIN(
+     SELECT ac.first_name||' '||ac.last_name AS actor_name,
+            film_act.film_id AS fi
+     FROM actor ac
+     JOIN film_actor film_act
+     USING (actor_id)
+) AS r
+ON f.film_id=r.fi
+GROUP BY 1,2
+ORDER BY 3 desc
+LIMIT 10
+-----------------------------------------------------------------------------------------------
+
+--fourth question  (Number_of movies in_each category based_on duration quartile?)
+WITH t1 AS (
+		SELECT f.title as film_title,
+	           c.name AS category_name,
+		  NTILE(3) OVER (ORDER BY f.rental_duration) AS standard_quartile
+		FROM film f
+		JOIN film_category f_c
+		USING (film_id)
+		JOIN category c
+		USING (category_id)
+)
+SELECT DISTINCT *
+FROM (
+SELECT category_name,
+	   standard_quartile,
+	   COUNT(film_title)
+	   OVER(PARTITION BY standard_quartile ORDER BY category_name) AS count
+FROM t1
+WHERE category_name
+IN ('Animation', 'Children', 'Sport', 'Comedy', 'Music')
+ORDER BY 1) sub;
