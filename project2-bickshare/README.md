@@ -9,10 +9,10 @@
   As part of your project submission, you will run SQL queries and build visualizations to showcase the output of your queries.</p>
 
 <ul><h4>List of software, firmware, hardware and database you may require:</h4></ul>
-<li>Installing PostgreSQL for Windows: <a>http://www.postgresqltutorial.com/install-postgresql/</a></li>
-<li>Installing PostgreSQL for Mac OS : <a>https://www.postgresql.org/download/macosx/</a></li>
-<li>You will need to download the Movie database from this page: PostgreSQL Sample Database</li>
-<li>A text editor, like Sublime or Atom.</li>
+          <li>You will need to download the Movie database from this page: <a href="PostgreSQL Sample Database"></a></li>
+          <li>Installing PostgreSQL for Windows: <a href="http://www.postgresqltutorial.com/install-postgresql/"></a></li>
+          <li>Installing PostgreSQL for Mac OS : <a href="https://www.postgresql.org/download/macosx/"></a></li>
+          <li>A text editor, like Atom.</li>
 DVD Rental ER Diagram for reference:
 
 
