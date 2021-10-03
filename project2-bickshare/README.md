@@ -1,8 +1,6 @@
 <h1>Date created:</h1>
    oct.3 2021
-
 <h2>Investigate a Relational Database</h2>
-<br>
 <h3>Description:</h3>
 <p>In this project, you will use SQL to explore a database related to movie rentals.
   You will write SQL code to run SQL queries and answer interesting questions about the database.
