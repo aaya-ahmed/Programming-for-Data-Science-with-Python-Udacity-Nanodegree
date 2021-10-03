@@ -18,17 +18,18 @@
 <img src="https://www.postgresqltutorial.com/wp-content/uploads/2018/03/dvd-rental-sample-database-diagram.png"/>
 
 <ol><h3>Files used:</h3>
+   <li>The following file contains Visualisations of the resulted data from corresponding queries:</li>
+<ul>
+   <li>SQL Project Report.pdf</li>
+</ul>
    <li>The following file contains necessary queries:</li>
    <ul>
       <li>Query.txt</li>
    </ul>
-   <li>The following file contains Visualisations of the resulted data from corresponding queries:<li>
-<ul>
-   <li>SQL Project Report.pdf</li>
-</ul>
 </ol>
 <h3>Credits:</h3>
 <ul>
-   <li><a href="https://www.postgresql.org/docs/12/index.html">PostgreSQL documentation is very usefull</a></li>
-   <li><a href="https://www.sqlstyle.guide/">SQL Style Guide</a>SQL Style Guide</li>
    <li>If I have doubts about the errors occured while running the query I used:<a href="www.stackoverflow.com"> www.stackoverflow.com</a></li>
+   <li><a href="https://www.sqlstyle.guide/">SQL Style Guide</a>SQL Style Guide</li>
+   <li><a href="https://www.postgresql.org/docs/12/index.html">PostgreSQL documentation is very usefull</a></li>
+   
