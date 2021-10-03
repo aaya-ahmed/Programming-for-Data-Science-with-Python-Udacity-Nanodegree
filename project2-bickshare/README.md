@@ -3,20 +3,21 @@
 
 <h2>Investigate a Relational Database</h2>
 <br>
-<h4>Description:</h4>
+<h3>Description:</h3>
 <p>In this project, you will use SQL to explore a database related to movie rentals.
   You will write SQL code to run SQL queries and answer interesting questions about the database.
   As part of your project submission, you will run SQL queries and build visualizations to showcase the output of your queries.</p>
 
-<ul><h4>List of software, firmware, hardware and database you may require:</h4></ul>
+<ul><h3>List of software, firmware, hardware and database you may require:</h3></ul>
           <li>You will need to download the Movie database from this page: <a href="PostgreSQL Sample Database">PostgreSQL Sample Database</a></li>
           <li>Installing PostgreSQL for Windows: <a href="http://www.postgresqltutorial.com/install-postgresql/">http://www.postgresqltutorial.com/install-postgresql/</a></li>
           <li>Installing PostgreSQL for Mac OS : <a href="https://www.postgresql.org/download/macosx/">https://www.postgresql.org/download/macosx/</a></li>
           <li>A text editor, like Atom.</li>
-DVD Rental ER Diagram for reference:
+ </ul>
+          
+<h3>DVD Rental ER Diagram for reference:</h3>
+<img src="http://www.postgresqltutorial.com/postgresql-sample-database/"/>
 
-
-Source: http://www.postgresqltutorial.com/postgresql-sample-database/
 
 Files used:
 The following file contains necessary queries:
