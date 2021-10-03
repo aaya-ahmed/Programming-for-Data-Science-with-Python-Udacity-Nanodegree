@@ -6,8 +6,8 @@
    1- you will use SQL to explore a database related to movie rentals.
    2- You will write SQL code to run SQL queries and answer interesting questions about the database.
    3- As part of your project submission, you will run SQL queries and build visualizations to showcase the output of your queries.</p>
-
-<ul><h3>List of software, firmware, hardware and database you may require:</h3>
+<h3>List of software, firmware, hardware and database you may require:</h3>
+<ul>
    <li>You will need to download the Movie database from this page: <a href="PostgreSQL Sample Database">PostgreSQL Sample Database</a></li>
    <li>Installing PostgreSQL for Windows: <a href="http://www.postgresqltutorial.com/install-postgresql/">http://www.postgresqltutorial.com/install-postgresql/</a></li>
    <li>Installing PostgreSQL for Mac OS : <a href="https://www.postgresql.org/download/macosx/">https://www.postgresql.org/download/macosx/</a></li>
@@ -16,8 +16,8 @@
           
 <h3>DVD Rental ER Diagram for reference:</h3>
 <img src="https://www.postgresqltutorial.com/wp-content/uploads/2018/03/dvd-rental-sample-database-diagram.png"/>
-
-<ol><h3>Files used:</h3>
+<h3>Files used:</h3>
+<ol>
    <li>The following file contains Visualisations of the resulted data from corresponding queries:</li>
 <ul>
    <li>SQL Project Report.pdf</li>
