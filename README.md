@@ -1,8 +1,5 @@
 # Programming-for-Data-Science-with-Python-Udacity-Nanodegree
 # Udacity-Programming-For-Data-Science-With-Python-Nanodegree
-
-## Created by Bal Yogesh Surath
-
 This repository contains projects did for Udacity Programming For Data Science With Python Nanodegree.
 
 
