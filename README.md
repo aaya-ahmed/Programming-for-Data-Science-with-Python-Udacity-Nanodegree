@@ -4,7 +4,7 @@ This repository contains projects did for Udacity Programming For Data Science W
 
 
 ## Project 1 : Investigate a Relational Database
-[Check My Project Submission Through This Link]()
+[Check My Project Submission Through This Link](https://github.com/aaya-ahmed/Programming-for-Data-Science-with-Python-Udacity-Nanodegree/tree/main/project1-sql-quary%20udacity)
 
 ### Overview:
 
@@ -18,7 +18,7 @@ For the presentation component, the student had to create four slides, and each 
 
 
 ## Project 2 : Explore US Bikeshare Data
-[Check My Project Submission Through This Link]()
+[Check My Project Submission Through This Link](https://github.com/aaya-ahmed/Programming-for-Data-Science-with-Python-Udacity-Nanodegree/tree/main/project2-bickshare)
 
 ### Overview:
 
@@ -28,7 +28,7 @@ The developed CLI program allows the user to explore an US bikeshare system data
 
 
 ## Project 3 : Post your Work on GitHub
-[Check My Project Submission Through This Link]()
+[Check My Project Submission Through This Link](https://github.com/aaya-ahmed/Programming-for-Data-Science-with-Python-Udacity-Nanodegree/tree/main/project3-github)
 
 ### Overview:
 
